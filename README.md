@@ -6,3 +6,12 @@ In order to transform the YOLO algorithm successfully, I have to make sure that 
 <img src="/Picture/1.png" />
 </div></br>
 The storage pattern of processed radar data as the picture beyond, among range, velocity and angle, the amount of angle has to be from small to large(or from large to small). Because in this way, all the points representing one object get together in one demension. As for range and velocity, they both have the pattern from small to large based on the arrangement rule of angle, but the range has the higher priority than the velocity.
+## Neural Network Of YOLO
+<div align=center>
+<img src="/Picture/2.png" />
+</div></br>
+In this project, 121 radar data points are divided into 11 Bounding Boxes. Each Bounding Box has 11 radar data points. After the convolution layer and full connection layer, the data volume with length of 11 and depth of 4 is obtained. Each data point in the output layer contains the information of whether each Bounding Box of the input radar data contains the target.
+<div align=center>
+<img src="/Picture/3.png" />
+</div></br>
+Here is the detail of output layer. Each output layer data point consists of four predictions: X, W, C (confidence) and P (category). X is the center coordinate of the bounding box relative to the bounding box in the cell. W is the width of the bounding box relative to the input radar data.
