@@ -15,3 +15,9 @@ In this project, 121 radar data points are divided into 11 Bounding Boxes. Each 
 <img src="/Picture/3.png" />
 </div></br>
 Here is the detail of output layer. Each output layer data point consists of four predictions: X, W, C (confidence) and P (category). X is the center coordinate of the bounding box relative to the bounding box in the cell. W is the width of the bounding box relative to the input radar data.
+## Loss Function
+<div align=center>
+<img src="/Picture/4.png" />
+</div></br>
+## Generation of radar YOLO algorithm train data set
+In order to train the Yolo neural network for radar data, it is necessary to mark the targets in radar data correctly. Therefore, when acquiring radar data, it is necessary to record the distance and angle between the target and the radar, and express them in the form of output layer data.
