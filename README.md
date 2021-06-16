@@ -25,3 +25,6 @@ Here is the detail of output layer. Each output layer data point consists of fou
 
 ## Generation of radar YOLO algorithm train data set
 In order to train the Yolo neural network for radar data, it is necessary to mark the targets in radar data correctly. Therefore, when acquiring radar data, it is necessary to record the distance and angle between the target and the radar, and express them in the form of output layer data.
+
+## Attention
+Since there are many things to deal with before graduation, I do not have enough time to mark the Radar data(to point out where the person are in Radar data). Hence, in this project, I just submit the Yolo network and no train data. I would updata this project in my postgraduate stage.
